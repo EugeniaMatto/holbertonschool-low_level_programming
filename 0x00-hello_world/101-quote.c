@@ -7,6 +7,10 @@
  */
 int main(void)
 {
-error# and that piece of art is useful\" - Dora Korpar, 2015-10-19\n;
-return (1);
+int hola = 2;
+  
+#if INT_MIN < hola
+#error and that piece of art is useful\" - Dora Korpar, 2015-10-19\n
+#endif
+return (0);
 }
