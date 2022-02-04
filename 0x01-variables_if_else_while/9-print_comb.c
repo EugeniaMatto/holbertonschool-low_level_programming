@@ -8,16 +8,15 @@ int main(void)
 {
 int a;
 a = 0;
-do
-{  
-putchar(a%10 + '0');
-if(a != 9)
+do {
+putchar(a % 10 + '0');
+if (a != 9)
 {
 putchar(',');
 putchar(' ');
 }
-a++; 
-}while (a < 10);
+a++;
+} while (a < 10);
 putchar('\n');
 return (0);
 }
