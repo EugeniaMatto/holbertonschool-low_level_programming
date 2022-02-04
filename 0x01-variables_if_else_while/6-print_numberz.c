@@ -11,10 +11,6 @@ for (a = 0; a <= 9; a++)
 {
 if (a == 0)
 {
-putchar('0');
-}
-else
-{
 putchar(a % 10 + '0');
 }
 }
