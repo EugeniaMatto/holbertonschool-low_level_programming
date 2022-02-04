@@ -20,6 +20,12 @@ for (c = 0 ; c <= 9; c++)
 {
 for (d = 0 ; d <= 9 ; d++)
 {
+if(d < b)
+{
+b++;
+}
+else
+{
 putchar(a % 10 + '0');
 putchar(b % 10 + '0');
 putchar(' ');
@@ -29,6 +35,7 @@ if (a != 9 || b != 8)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
