@@ -21,7 +21,7 @@ printf("%d", digit);
 printf(" and is ");
 if (digit > 5)
 {
-printf("greater than 5 \n");
+printf("greater than 5\n");
 }
 else if ((digit < 5) && (digit != 0))
 {
