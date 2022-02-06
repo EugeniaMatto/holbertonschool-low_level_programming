@@ -6,34 +6,23 @@
  */
 int main(void)
 {
-int a;
+int i;
 int b;
-int c;
-int d;
-for (a = 0 ; a <= 9; a++)
+for (i = 0 ; i <= 99; i++)
 {
-for (b = 0 ; b <= 9 ; b++)
+for (b = 0 ; b <= 99 ; b++)
 {
-if (a <= b)
+if (i < b)
 {
-for (c = 0 ; c <= 9; c++)
-{
-for (d = 0 ; d <= 9 ; d++)
-{
-if ((a < c) || ((a == c) && (d > b)))
-{
-putchar(a % 10 + '0');
-putchar(b % 10 + '0');
+putchar(i / 10 + '0');
+putchar(i % 10 + '0');
 putchar(' ');
-putchar(c % 10 + '0');
-putchar(d % 10 + '0');
-if (a != 9 || b != 8)
+putchar(b / 10 + '0');
+putchar(b % 10 + '0');
+if (!(i == 98 && b == 99))
 {
 putchar(',');
 putchar(' ');
-}
-}
-}
 }
 }
 }
