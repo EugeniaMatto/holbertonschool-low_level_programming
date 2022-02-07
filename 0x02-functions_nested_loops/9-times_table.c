@@ -23,7 +23,7 @@ if (a != 9)
 _putchar(',');
 _putchar(' ');
 }
-_putchar('\n');
 }
+_putchar('\n');
 }
 }
