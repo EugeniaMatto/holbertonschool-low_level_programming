@@ -2,7 +2,8 @@
 /**
  * add - jaksd
  * @a: asda
- * @b: asdsa
+ * @b: asds
+ * Return: sada
  */
 int add(int a, int b)
 {
