@@ -7,8 +7,8 @@
  */
 void print_to_98(int n)
 {
-if (n == 98)
-printf("98");
+int x;
+x = n;
 if (n < 98)
 {
 for (; n <= 98; n++)
@@ -21,14 +21,15 @@ printf(", ");
 else
 printf("98");
 }
+n = 0;
 }
-if (n > 98)
+if (x >= 98)
 {
-for (; n >= 98; n--)
+for (; x >= 98; x--)
 {
-if (n != 98)
+if (x != 98)
 {
-printf("%i", n);
+printf("%i", x);
 printf(", ");
 }
 else
