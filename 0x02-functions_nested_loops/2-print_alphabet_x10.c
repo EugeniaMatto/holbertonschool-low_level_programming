@@ -12,9 +12,6 @@ for (a = 'a' ; a <= 'z' ; a++)
 {
 _putchar(a);
 }
-if (i != 9)
-{
 _putchar('\n');
-}
 }
 }
