@@ -7,9 +7,8 @@
 int print_last_digit(int c)
 {
 int x;
-if (c == -2147483648){
-c=88;
-}
+if (c == -2147483648)
+c = 88;
 if (c < 0)
 {
 c = -c;
