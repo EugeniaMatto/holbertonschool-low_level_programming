@@ -13,11 +13,11 @@ for (i = 0 ; i <= 9 ; i++)
 for (a = 0 ; a <= 9 ; a++)
 {
 res = i * a;
-if (res >= 10 && res != 0)
+if (res >= 10 && a != 0)
 {
 _putchar(res / 10 + '0');
 }
-else
+else if (res < 10 && a != 0)
 {
 _putchar(' ');
 }
