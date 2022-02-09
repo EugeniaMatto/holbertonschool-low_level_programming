@@ -11,19 +11,21 @@ for (i = 1; i <= 100; i++)
 {
 if (((i % 10) + (i / 10)) % 3 == 0)
 {
-printf("Fizz ");
+printf("Fizz");
 x = 1;
 }
 if ((i % 10 == 5) || (i % 10 == 0))
 {
 printf("Buzz");
-if (i != 100)
-putchar(' ');
 x = 1;
 }
 if (x == 0)
-printf("%d ", i);
+printf("%d", i);
 x = 0;
+if (i != 100)
+{
+putchar(' ');
+}
 }
 putchar('\n');
 return (0);
