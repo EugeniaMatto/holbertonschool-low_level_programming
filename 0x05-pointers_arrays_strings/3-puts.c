@@ -8,7 +8,11 @@ void _puts(char *str)
 int i, cont = 0;
 char l = '0';
 if (*str == '\0')
-cont = 0;
+{
+_putchar('\n');
+}
+else
+{
 while (l != '\0')
 {
 cont++;
@@ -20,4 +24,5 @@ l = *(str + i);
 _putchar(l);
 }
 _putchar('\n');
+}
 }
