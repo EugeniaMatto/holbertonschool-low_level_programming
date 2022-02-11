@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts_half - ad
- * @s: string
+ * @str: string
  */
 void puts_half(char *str)
 {
@@ -10,16 +10,16 @@ int i = 0;
 if (largo % 2 == 0)
 {
 for (i = largo / 2; i < largo; i++)
-	{
-	_putchar(*(str + i));
-	}
+{
+_putchar(*(str + i));
+}
 }
 else
 {
-i = ((largo -1) / 2) + 1;
-for (; i < largo; i++)
+i = (largo - 1) / 2;
+for (i = i + 1; i < largo; i++)
 {
- _putchar(*(str + i));
+_putchar(*(str + i));
 }
 }
 _putchar('\n');
