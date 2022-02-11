@@ -1,5 +1,4 @@
 #include "main.h"
-int _putchar(char c);
 /**
  * puts2 - ad
  * @s: string
@@ -11,7 +10,7 @@ int i;
 for (i = 0 ; i < largo; i++)
 {
 	if (i % 2 == 0)
-	_putchar(i + '0');
+	_putchar(*(s + i));
 }
 }
 /**
