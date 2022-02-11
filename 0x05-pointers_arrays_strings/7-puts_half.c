@@ -16,7 +16,8 @@ for (i = largo / 2; i < largo; i++)
 }
 else
 {
-for (i = largo-1 ; i >= largo / 2; i--)
+i = (largo -1) / 2;
+for (; i < largo; i++)
 {
  _putchar(*(str + i));
 }
