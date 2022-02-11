@@ -14,7 +14,7 @@ for (b = 0 ; b < i; b++)
 {
 string[0] = s[i];
 s[i] = s[b];
-s[b] = string[0];	
+s[b] = string[0];
 i--;
 }
 }
