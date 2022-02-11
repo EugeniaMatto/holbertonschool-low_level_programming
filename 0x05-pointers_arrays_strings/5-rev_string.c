@@ -18,6 +18,10 @@ s[b] = string[0];
 i--;
 }
 }
+/**
+ * _strlen - ada
+ * @s: das
+ */
 int _strlen(char *s)
 {
 int cont = 0;
