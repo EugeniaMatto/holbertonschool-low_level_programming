@@ -12,6 +12,7 @@ for (i = 0 ; i < largo; i++)
 	if (i % 2 == 0)
 	_putchar(*(s + i));
 }
+_putchar('\n');
 }
 /**
  * _strlen - ada
