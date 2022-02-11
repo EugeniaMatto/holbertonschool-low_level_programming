@@ -18,7 +18,7 @@ while (l != '\0')
 cont++;
 l = *(str + cont);
 }
-for(i = 0; i < cont; i++)
+for (i = 0; i < cont; i++)
 {
 l = *(str + i);
 _putchar(l);
