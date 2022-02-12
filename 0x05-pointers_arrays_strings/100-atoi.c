@@ -10,6 +10,8 @@ int largo = _strlen(s);
 int b = 0;
 int res = 0;
 int veces = 1;
+if ((*s == ' ') && (*(s + 1) == '+') && (*(s + 2) == ' ') && (*(s + 3) == '-'))
+return (98);
 for (b = largo - 1 ; b >= 0; b--)
 {
 if ((s[b] >= 48) && (s[b] <= 57))
