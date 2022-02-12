@@ -19,7 +19,7 @@ return (-2147483648);
 for (b = largo - 1 ; b >= 0; b--)
 {
 if (s[b] == ';')
-return(98);
+return (98);
 if ((s[b] >= 48) && (s[b] <= 57))
 {
 res += ((s[b] - '0') * veces);
