@@ -8,13 +8,20 @@ int _atoi(char *s)
 {
 int largo = _strlen(s);
 int b = 0;
-int ret;
-        for (b = 0 ; b < largo; b++)
+int res = 0;
+int veces = 1;
+        for (b = largo - 1 ; b >= 0; b--)
         {
 		if ((s[b] >= 48) && (s[b] <= 57))
-		ret = s[b] - '0';	
+		{
+			res += ((s[b]- '0') * veces);
+			veces = veces * 10;
+		  	if (s[(b - 1)] == 45)
+                                res = -res;
+		}
         }
-return (ret);
+
+return (res);
 }
 /**
  * _strlen - ada
