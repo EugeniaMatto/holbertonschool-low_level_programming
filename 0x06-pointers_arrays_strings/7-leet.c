@@ -2,6 +2,7 @@
 /**
  * leet - codifica
  * @a: cadena a codificar
+ * Return: cadena codificada
  */
 char *leet(char *a)
 {
