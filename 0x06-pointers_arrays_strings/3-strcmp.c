@@ -19,6 +19,6 @@ return (0);
 }
 else
 {
-return(s1[i] - s2[i]);
+return (s1[i] - s2[i]);
 }
 }
