@@ -9,7 +9,8 @@ char *rot13(char *a)
 int i;
 for (i = 0; a[i] != '\0'; i++)
 {
-while ((a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z'))
+while (((a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z'
+)) && (a[i - 1] != '\\'))
 {
 if ((a[i] >= 'a' && a[i] <= 'm') || (a[i] >= 'A' && a[i] <= 'M'))
 {
