@@ -8,23 +8,17 @@ int _strlen(char *s);
  */
 int _strcmp(char *s1, char *s2)
 {
-return (_strlen(s1) - _strlen(s2));
-}
-/**
- * _strlen - retorna el largo
- * @s: char
- * Return: largo
- */
-int _strlen(char *s)
+int i = 0;
+while (s1[i] == s2[i] && s1[i] != '\0')
 {
-int cont = 0;
-char l = '0';
-if (*s == '\0')
+i++;
+}
+if (s1[i] == s2[i])
+{
 return (0);
-while (l != '\0')
-{
-cont++;
-l = *(s + cont);
 }
-return (cont);
+else
+{
+return(s1[i] - s2[i]);
+}
 }
