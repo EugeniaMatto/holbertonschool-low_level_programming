@@ -10,14 +10,14 @@ int i;
 char c;
 for (i = 0; a[i] != '\0'; i++)
 {
-	c = a[i];
-	while ((a[i] >= 'n' && a[i] <= 'z') || (a[i] >= 'N' && a[i] <= 'Z'))
-	{
-	 a[i] = a[i] - 13;
-	 break;
-	}
-	if ((c >= 'a' && c <= 'm') || (c >= 'A' && c <= 'M'))
-	a[i] = c + 13;
+c = a[i];
+while ((a[i] >= 'n' && a[i] <= 'z') || (a[i] >= 'N' && a[i] <= 'Z'))
+{
+a[i] = a[i] - 13;
+break;
+}
+if ((c >= 'a' && c <= 'm') || (c >= 'A' && c <= 'M'))
+a[i] = c + 13;
 }
 return (a);
 }
