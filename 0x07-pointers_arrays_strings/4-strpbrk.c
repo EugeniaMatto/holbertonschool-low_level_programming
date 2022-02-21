@@ -18,7 +18,7 @@ int x, i = 0;
 			{
 				return (s + i);
 			}
-		}	
+		}
 	}
 return ('\0');
 }
