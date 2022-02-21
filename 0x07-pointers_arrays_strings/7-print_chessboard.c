@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _print_chessboard - daads
+ * print_chessboard - daads
  * @a: ads
- * @8: ad
+ *
  *
  */
 void print_chessboard(char (*a)[8])
