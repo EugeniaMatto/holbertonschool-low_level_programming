@@ -13,15 +13,15 @@ unsigned int ret = 0;
 int x, z, i = 0;
 for (i = 0; s[i] != '\0'; i++)
 {
-	for (x = 0; accept[x] != '\0'; x++)
-	{
-		if (s[i] == accept[x])
-		{
-		z = 1;
-		ret++;
-		break;
-		}
-	}
+for (x = 0; accept[x] != '\0'; x++)
+{
+if (s[i] == accept[x])
+{
+z = 1;
+ret++;
+break;
+}
+}
 if (z == 0)
 break;
 z = 0;
@@ -37,13 +37,12 @@ int _strlen(char *s)
 {
 int cont = 0;
 char l = '0';
-
 if (*s == '\0')
 return (0);
-        while (l != '\0')
-        {
-                cont++;
-                l = *(s + cont);
-        }
-        return (cont);
+while (l != '\0')
+{
+cont++;
+l = *(s + cont);
+}
+return (cont);
 }
