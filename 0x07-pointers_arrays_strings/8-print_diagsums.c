@@ -28,12 +28,12 @@ while (cont < size)
 	suma += a[x];
 	sum += a[y];
 	x += 1 + size;
-	y += size - 1;	
+	y += size - 1;
 	}
 cont++;
 }
 printf("%d", suma);
 suma = 0;
-printf(", %d\n", sum); 
+printf(", %d\n", sum);
 sum = 0;
 }
