@@ -4,7 +4,8 @@
  * @s: ads
  * @b: dsad
  * @n: dasd
- * Return - punter
+ *
+ * Return: punter
  */
 char *_memset(char *s, char b, unsigned int n)
 {
