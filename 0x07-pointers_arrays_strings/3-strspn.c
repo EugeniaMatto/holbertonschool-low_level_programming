@@ -18,17 +18,12 @@ for (i = 0; s[i] != '\0'; i++)
 		if (s[i] == accept[x])
 		{
 		z = 1;
+		ret++;
 		break;
 		}
 	}
 if (z == 0)
-{
 break;
-}
-else
-{
-ret++;
-}
 z = 0;
 }
 return (ret);
