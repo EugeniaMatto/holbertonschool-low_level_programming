@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - daads
  * @s: ads
@@ -17,5 +18,5 @@ while (s[i] != '\0')
 	}
 i++;
 }
-return ('\0');
+return (NULL);
 }
