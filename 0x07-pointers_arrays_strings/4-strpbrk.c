@@ -19,9 +19,16 @@ char *_strpbrk(char *s, char *accept)
 				break;
 			}
 		}
-		if (z == 0)
+		if (z == 1)
 			break;
-		z = 0;
 	}
-	return (s + i + 1);
+
+	if (z == 0)
+	{
+	return ('\0');
+	}
+	else
+	{
+	return (s + i);
+	}
 }
