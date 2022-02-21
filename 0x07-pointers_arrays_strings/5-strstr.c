@@ -33,6 +33,6 @@ for (i = 0; haystack[i] != '\0'; i++)
 	}
 }
 if (*needle == '\0')
-return (haystack + i);
+return (haystack);
 return ('\0');
 }
