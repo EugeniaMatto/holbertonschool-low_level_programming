@@ -19,10 +19,10 @@ return (_funcionAux(n, (n - 1)));
 int _funcionAux(int n, int num)
 {
 if (num <= 1)
-        return (0);
+return (0);
 if (n % num == 0)
 return (0);
 if (num == 2)
 return (1);
-return _funcionAux(n , (num - 1));
+return (_funcionAux(n, (num - 1)));
 }
