@@ -17,7 +17,7 @@ return (_funcionAux(n, (n/2)));
  */
 int _funcionAux(int n, int num)
 {
-if (num <= 1)
+if (num <= 0)
 	return (-1);
 if (num * num != n)
 {
