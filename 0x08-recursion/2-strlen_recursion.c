@@ -2,6 +2,7 @@
 /**
  * _strlen_recursion - put en recursion
  * @s: cadena
+ * Return: largo de la cadena
  */
 int _strlen_recursion(char *s)
 {
