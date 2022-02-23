@@ -7,7 +7,7 @@ int _funcionAux(int n, int num);
  */
 int _sqrt_recursion(int n)
 {
-return (_funcionAux(n, (n/2)));
+return (_funcionAux(n, n));
 }
 /**
  * _funcionAux - x elevado a y
@@ -22,7 +22,7 @@ if (num <= 0)
 if (num * num != n)
 {
 	if (num > 10000)
-		num = num - 1000;
+		num = num / 2;
 	return (_funcionAux(n, (num - 1)));
 }
 else
