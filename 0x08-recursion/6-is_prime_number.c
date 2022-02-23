@@ -1,5 +1,5 @@
 #include "main.h"
-#include "stdio.h"
+int _funcionAux(int n, int num);
 /**
  * is_prime_number - x elevado a y
  * @n: num
@@ -8,26 +8,21 @@
  */
 int is_prime_number(int n)
 {
-int aux = 0;
-int *p;
-if (n <= 1)
-{
-*p = 0;
-return (0);
+return (_funcionAux(n, (n - 1)));
 }
-if (n == 2)
+/**
+ * _funcionAux - x elevado a y
+ * @n: num
+ * @num: dasd
+ * Return: pow
+ */
+int _funcionAux(int n, int num)
 {
-*p = 0;
+if (num <= 1)
+        return (0);
+if (n % num == 0)
+return (0);
+if (num == 2)
 return (1);
-}
-if (*p == 0)
-{
-p = &aux;
-*p = n;
-printf("%d acacc \n " , *p);
-}
-if (*p % (n - 1) == 0)
-return (0);
-
-return (is_prime_number(n - 1));
+return _funcionAux(n , (num - 1));
 }
