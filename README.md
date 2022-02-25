@@ -1,1 +1,1 @@
-aprendiendo C
+ARGC ARGV
