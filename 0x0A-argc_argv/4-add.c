@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-int i, x, z = 0;
+int i, x, z, aux, tienenum= 0;
 int suma = 0;
 if (argc == 1)
 {
@@ -23,11 +23,26 @@ for (i = 1; i < argc; i++)
 	{
 		if (!((argv[i])[x] >= '0' && (argv[i])[x] <= '9'))
 		{
-		printf("Error\n");
-		return (1);
+		aux = 1;
+		}
+		else
+		{
+		tienenum = 1;
 		}
 	}
 }
+if (aux == 1 && tienenum == 0)
+{
+printf("0\n");
+return (0);
+}
+else if (aux == 1 && tienenum == 1)
+{
+printf("Error\n");
+return (1);
+}
+aux = 0;
+tienenum = 0;
 for (i = 1; i < argc; i++)
 	suma += atoi(argv[i]);
 printf("%d\n", suma);
