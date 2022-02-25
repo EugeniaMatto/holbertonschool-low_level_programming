@@ -15,15 +15,10 @@ if (argc == 1)
 }
 for (i = 1; i < argc; i++)
 {
-	if (atoi(argv[i]) == 0)
-	{
-	printf("0\n");
-	return (0);
-	}
 	z = strlen(argv[i]);
 	for (x = 0; x < z; x++)
 	{
-		if (!((argv[i])[x] >= '0' && (argv[i])[x] <= '9'))
+		if (!(argv[i][x] >= '0' && argv[i][x] <= '9'))
 		{
 			printf("Error\n");
 			return (1);
