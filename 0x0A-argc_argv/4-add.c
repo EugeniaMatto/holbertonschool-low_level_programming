@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * main - asd
- * @argc - cont argumentos
- * @argv - argumentos
+ * main - das
+ * @argc: cont argumentos
+ * @argv: argumentos
  * Return: sada
  */
 int main(int argc, char *argv[])
@@ -29,7 +29,7 @@ for (i = 1; i < argc; i++)
 	}
 }
 for (i = 1; i < argc; i++)
-	suma += atoi (argv[i]);
+	suma += atoi(argv[i]);
 printf("%d\n", suma);
 return (0);
 }
