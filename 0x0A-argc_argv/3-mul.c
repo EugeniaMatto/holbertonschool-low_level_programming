@@ -2,8 +2,9 @@
 #include <stdlib.h>
 /**
  * main - das
- * @argc - cont argumentos
- * @argv - argumentos
+ * @argc: cont argumentos
+ * @argv: argumentos
+ * Return: sada
  */
 int main(int argc, char *argv[])
 {
