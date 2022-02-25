@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * main - das
- * @argc - cont argumentos
- * @argv - argumentos
+ * @argc: cont argumentos
+ * @argv: argumentos
+ * Return: asda
  */
 int main(int argc, char *argv[])
 {
