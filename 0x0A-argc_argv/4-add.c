@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
- * main - das
+ * main - asd
  * @argc - cont argumentos
  * @argv - argumentos
+ * Return: sada
  */
 int main(int argc, char *argv[])
 {
-int i = 0;
+int i, x, z = 0;
 int suma = 0;
 if (argc == 1)
 {
@@ -16,16 +18,18 @@ if (argc == 1)
 }
 for (i = 1; i < argc; i++)
 {
-if (atoi (argv[i]) != 0)
-{
+	z = strlen(argv[i]);
+	for (x = 0; x < z; x++)
+	{
+		if (!((argv[i])[x] >= '0' && (argv[i])[x] <= '9'))
+		{
+		printf("Error\n");
+		return (1);
+		}
+	}
+}
+for (i = 1; i < argc; i++)
 	suma += atoi (argv[i]);
-}
-else
-{
-        printf("Error\n");
-        return (1);
-}
-}
 printf("%d\n", suma);
 return (0);
 }
