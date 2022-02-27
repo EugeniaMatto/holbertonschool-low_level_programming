@@ -1,36 +1,43 @@
 #include "main.h"
 
 /**
- * _puts - prints a string
+ * _puts - check the code
  * @str: string
+ * Return: Always 0.
  */
 void _puts(char *str)
 {
-	int i;
+	int i = 0;
+	char a = ' ';
+	int x = _strlen(str) - 1;
 
-	for (i = 0; i < _strlen(str); i++)
+	while (i <= x)
 	{
-		_putchar(str[i]);
+		a = str[i];
+		_putchar(a);
+		i++;
 	}
 	_putchar('\n');
 }
 
 /**
- * _strlen - string length
+ * _strlen - check the code
  * @s: string
- *
- * Return: the length of a string
+ * Return: Always 0.
  */
 int _strlen(char *s)
-{
-	int i;
-	char a;
-
-	for (i = 0; i > -1 ; i++)
 	{
-		a = s[i];
-		if (a == '\0')
-			break;
+	int count;
+	char c;
+
+	c = *s;
+	count = 0;
+
+	while (c != '\0')
+	{
+	count++;
+	c = *(s + count);
+
 	}
-	return (i);
-}
+	return (count);
+	}
