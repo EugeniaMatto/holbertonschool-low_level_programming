@@ -31,9 +31,9 @@ for (i = 0; i < cont; i++)
 {
 	c = 0;
 	while (str[b] != '\0' && str[b] != ' ')
-	c++;
-
-	printf("%d\n", c);
+	{
+		c++;
+	}
 	p[i] = malloc(c * sizeof(char));
 		if (p[i] == NULL)
 			return (NULL);
