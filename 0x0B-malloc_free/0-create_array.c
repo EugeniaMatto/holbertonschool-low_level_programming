@@ -8,11 +8,9 @@
 char *create_array(unsigned int size, char c)
 {
 char *p;
-p = malloc(sizeof(char) * size);
-
-if (p == NULL)
+if (size == 0)
 	return ('\0');
-
+p = malloc(sizeof(char) * size);
 p[0] = c;
 
 return (p);
