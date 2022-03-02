@@ -7,7 +7,7 @@
 char **strtow(char *str)
 {
 char **p;
-int i, c, b, cont = 0;
+int i, c, cont = 0;
 
 if (str == NULL || *str == '\0')
 return (NULL);
@@ -26,14 +26,8 @@ p = malloc(sizeof(char *) * (cont + 1));
 if (p == NULL)
 	return (NULL);
 c = 0;
-b = 0;
 for (i = 0; i < cont; i++)
 {
-	c = 0;
-	while (str[b] != '\0' && str[b] != ' ')
-	{
-		c++;
-	}
 	p[i] = malloc(c * sizeof(char));
 		if (p[i] == NULL)
 			return (NULL);
