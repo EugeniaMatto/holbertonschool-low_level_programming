@@ -22,7 +22,7 @@ while (str[i] != '\0')
 i++;
 }
 
-p = malloc(sizeof(char *) * (cont));
+p = malloc(sizeof(char *) * (cont + 1));
 if (p == NULL)
 	return (NULL);
 c = 0;
