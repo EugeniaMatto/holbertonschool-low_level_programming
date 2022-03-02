@@ -25,6 +25,7 @@ b = 0;
 cont++;
 }
 
+cont++;
 p = malloc(sizeof(char) * cont);
 
 b = 0;
@@ -41,5 +42,6 @@ for (i = 0; i < ac; i++)
 	p[c] = '\n';
 	c++;
 }
+p[c] = '\0';
 return (p);
 }
