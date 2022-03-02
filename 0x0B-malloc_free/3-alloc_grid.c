@@ -20,7 +20,7 @@ if (p == NULL)
 	return (NULL);
 }
 
-for (i = 0; i < width; i++)
+for (i = 0; i < width - 1; i++)
 {
 	p[i] = malloc((height - 1) * sizeof(int));
 	if (p[i] == NULL)
