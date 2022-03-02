@@ -17,14 +17,13 @@ cont = 0;
 for (i = 0; i < ac; i++)
 {
 b = 0;
-while (av[i][b] != '\0')
-{
-b++;
+	while (av[i][b] != '\0')
+	{
+	b++;
+	cont++;
+	}
 cont++;
 }
-}
-
-cont++;
 
 p = malloc(sizeof(char) * cont);
 
