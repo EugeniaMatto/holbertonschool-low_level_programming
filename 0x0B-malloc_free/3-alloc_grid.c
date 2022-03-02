@@ -22,7 +22,7 @@ if (p == NULL)
 
 for (i = 0; i < width; i++)
 {
-	p[i] = malloc(height * sizeof(int));
+	p[i] = malloc((height - 1) * sizeof(int));
 	if (p[i] == NULL)
 	{
 		b = 1;
