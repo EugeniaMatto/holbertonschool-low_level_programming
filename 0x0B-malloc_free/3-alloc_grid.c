@@ -13,7 +13,7 @@ int i, b = 0;
 if (width < 1 || height < 1)
 	return (NULL);
 
-p = malloc(sizeof(int*) * (width));
+p = malloc(sizeof(int) * (width));
 if (p == NULL)
 {
 	free(p);
