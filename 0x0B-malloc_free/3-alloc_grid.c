@@ -13,7 +13,7 @@ int i, b = 0;
 if (width < 1 || height < 1)
 	return (NULL);
 
-p = (int**)malloc(sizeof(int*) * (width));
+p = malloc(sizeof(int*) * (width));
 if (p == NULL)
 {
 	free(p);
@@ -22,7 +22,7 @@ if (p == NULL)
 
 for (i = 0; i < width; i++)
 {
-	p[i] = (int*)malloc(height * sizeof(int));
+	p[i] = malloc(height * sizeof(int));
 	if (p[i] == NULL)
 	{
 		b = 1;
