@@ -13,16 +13,16 @@ int i, b = 0;
 if (width < 1 || height < 1)
 	return (NULL);
 
-p = malloc(sizeof(int*) * (width - 1));
+p = malloc(sizeof(int *) * width);
 if (p == NULL)
 {
 	free(p);
 	return (NULL);
 }
 
-for (i = 0; i < width - 1; i++)
+for (i = 0; i < width; i++)
 {
-	p[i] = malloc((height - 1) * sizeof(int));
+	p[i] = malloc(height * sizeof(int));
 	if (p[i] == NULL)
 	{
 		b = 1;
