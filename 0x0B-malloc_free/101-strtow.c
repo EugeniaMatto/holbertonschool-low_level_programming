@@ -25,7 +25,7 @@ if (p == NULL)
 
 b = 0;
 c = 0;
-for (i = 0; i < cont && str[b] != '\0'; i++)
+for (i = 0; i < cont; i++)
 {
 	c = 0;
 		while (str[b] != ' ')
@@ -41,7 +41,7 @@ for (i = 0; i < cont && str[b] != '\0'; i++)
 s = 0;
 x = 0;
 for (i = 0; i < b; i++)
-{	
+{
 if (str[i] == ' ')
 {
 s++;
