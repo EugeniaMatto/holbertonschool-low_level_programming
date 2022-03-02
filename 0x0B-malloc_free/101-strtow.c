@@ -7,53 +7,32 @@
 char **strtow(char *str)
 {
 char **p;
-int s, x, b, i, c, cont = 0;
+int i, c, cont = 0;
 
 if (str == NULL || *str == '\0')
 return (NULL);
 
-while (str[i])
+i = 0;
+cont = 0;
+while (str[i] != '\0')
 {
-if (str[i] == ' ')
-cont++;
+	if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
+	cont++;
+
 i++;
 }
 
-p = malloc(sizeof(char *) * (cont + 1));
+p = malloc(sizeof(char *) * (cont));
 if (p == NULL)
 	return (NULL);
-
-b = 0;
 c = 0;
 for (i = 0; i < cont; i++)
 {
-	c = 0;
-		while (str[b] != ' ')
-		{
-		c++;
-		b++;
-		}
-	b++;
-	p[i] = malloc((c + 1) * sizeof(char));
+	
+	printf("%d\n", c);
+	p[i] = malloc(c * sizeof(char));
 		if (p[i] == NULL)
 			return (NULL);
 }
-s = 0;
-x = 0;
-for (i = 0; i < b; i++)
-{
-if (str[i] == ' ')
-{
-s++;
-x = 0;
-}
-else
-{
-p[s][x] = str[i];
-x++;
-}
-}
-p[c] = '\0';
-
 return (p);
 }
