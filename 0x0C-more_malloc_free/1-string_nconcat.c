@@ -19,17 +19,18 @@ i = 0;
 b = 0;
 while (s1[i] != '\0')
 i++;
+
 i++;
 while (s2[b] != '\0')
 b++;
 if (b < n)
 n = b;
-p = malloc(i + n);
+p = malloc((i + n) * (sizeof(char)));
 if (p == NULL)
 return (NULL);
 c = 0;
 b = 0;
-for (a = 0; a < (n + i - 1); a++)
+for (a = 0; a < (n + i); a++)
 {
 if (s1[a] == '\0')
 b = 1;
