@@ -22,7 +22,7 @@ while (str[i] != '\0')
 i++;
 }
 
-p = malloc(sizeof(char *) * spaces);
+p = malloc(sizeof(char *) * (spaces + 1));
 if (p == NULL)
 	return (NULL);
 c = 0;
@@ -38,7 +38,7 @@ for (i = 0; str[i] != '\0' && c < spaces; i++)
 		letras++;
 		i++;
 	}
-	p[c] = malloc(sizeof(char) * (letras + 2));
+	p[c] = malloc(sizeof(char) * letras);
 	i = i - letras;
 	letras = 0;
 	while (str[i] != '\0' && str[i] != ' ' && c != spaces)
