@@ -26,20 +26,17 @@ p = malloc(sizeof(char *) * spaces);
 if (p == NULL)
 	return (NULL);
 c = 0;
-for (i = 0; i < spaces; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-	if (str[c] == ' ' && str[c + 1] != ' ' && str[c + 1] != '\0')
+	if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
 	{
-	c++;
-		while (str[c] != '\0' || str[c] != ' ')
+	i++;
+		while (str[i] != '\0' || str[i] != ' ')
 		{
 		letras++;
-		c++;
+		i++;
 		}
-	p[i] = malloc(sizeof(char) * letras);	
-	}
-	else
-	{
+	p[c] = malloc(sizeof(char) * letras);
 	c++;
 	}
 }
