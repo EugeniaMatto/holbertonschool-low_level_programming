@@ -7,30 +7,57 @@
 char **strtow(char *str)
 {
 char **p;
-int i, c, cont = 0;
+int i, c, letras, spaces = 0;
 
 if (str == NULL || *str == '\0')
 return (NULL);
 
 i = 0;
-cont = 0;
+spaces = 0;
 while (str[i] != '\0')
 {
 	if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
-	cont++;
+	spaces++;
 
 i++;
 }
 
-p = malloc(sizeof(char *) * (cont + 1));
+p = malloc(sizeof(char *) * spaces);
 if (p == NULL)
 	return (NULL);
 c = 0;
-for (i = 0; i < cont; i++)
+for (i = 0; i < spaces; i++)
 {
-	p[i] = malloc(c * sizeof(char));
-		if (p[i] == NULL)
-			return (NULL);
+	if (str[c] == ' ' && str[c + 1] != ' ' && str[c + 1] != '\0')
+	{
+	c++;
+		while (str[c] != '\0' || str[c] != ' ')
+		{
+		letras++;
+		c++;
+		}
+	p[i] = malloc(sizeof(char) * letras);	
+	}
+	else
+	{
+	c++;
+	}
+}
+c = 0;
+letras = 0;
+for (i = 0; i < spaces; i++)
+{
+letras = 0;
+if (str[c] == ' ' && str[c + 1] != ' ' && str[c + 1] != '\0')
+{
+	c++;
+	while(str[c] != '\0' && str[c] != ' ')
+	{
+	p[i][letras] = str[c];
+	letras++;
+	c++;
+	}
+}
 }
 return (p);
 }
