@@ -38,10 +38,10 @@ for (i = 0; str[i] != '\0' && c < spaces; i++)
 		letras++;
 		i++;
 	}
-	p[c] = malloc(sizeof(char) * (letras + 1));
+	p[c] = malloc(sizeof(char) * (letras + 2));
 	i = i - letras;
 	letras = 0;
-	while (str[i] != '\0' && str[i] != ' ')
+	while (str[i] != '\0' && str[i] != ' ' && c != spaces)
 	{
 		p[c][letras] = str[i];
 		i++;
