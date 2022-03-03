@@ -26,35 +26,30 @@ p = malloc(sizeof(char *) * spaces);
 if (p == NULL)
 	return (NULL);
 c = 0;
-for (i = 0; str[i] != '\0'; i++)
+for (i = 0; str[i] != '\0' && c < spaces; i++)
 {
-	if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
+	if ((str[i] != ' ' && str[i] != '\0')||(str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0'))
 	{
-	i++;
-		while (str[i] != '\0' || str[i] != ' ')
+	if (str[i] == ' ')
+		i++;
+	letras = 0;
+		while (str[i] != '\0' && str[i] != ' ')
 		{
 		letras++;
 		i++;
-		}
-	p[c] = malloc(sizeof(char) * letras);
-	c++;
 	}
-}
-c = 0;
-letras = 0;
-for (i = 0; i < spaces; i++)
-{
-letras = 0;
-if (str[c] == ' ' && str[c + 1] != ' ' && str[c + 1] != '\0')
-{
-	c++;
-	while(str[c] != '\0' && str[c] != ' ')
+	p[c] = malloc(sizeof(char) * (letras + 1));
+	i = i - letras;
+	letras = 0;
+	while (str[i] != '\0' && str[i] != ' ')
 	{
-	p[i][letras] = str[c];
-	letras++;
+		p[c][letras] = str[i];
+		i++;
+		letras++;
+	}
 	c++;
 	}
 }
-}
+
 return (p);
 }
