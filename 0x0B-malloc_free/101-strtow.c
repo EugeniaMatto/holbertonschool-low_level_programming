@@ -50,6 +50,6 @@ for (i = 0; str[i] != '\0' && c < spaces; i++)
 	c++;
 	}
 }
-p[spaces] = malloc(sizeof(char) * 1);
+
 return (p);
 }
