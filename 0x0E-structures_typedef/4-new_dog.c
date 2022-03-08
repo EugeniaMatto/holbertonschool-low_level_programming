@@ -28,6 +28,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (my_dog->name == NULL)
 		i = 1;
 
+	if (my_dog->age < 0)
+		return (NULL);
+
 	(*my_dog).age = age;
 
 	my_dog->owner = strdup(owner);
