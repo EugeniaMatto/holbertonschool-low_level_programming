@@ -5,13 +5,11 @@
 /**
  * get_op_func - funcion para obtener que operacion usar
  * @s: operador
- * @a: int 1
- * @b: int 2
  * Return: result
  */
 int (*get_op_func(char *s))(int, int)
 {
-    op_t ops[] = {
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
