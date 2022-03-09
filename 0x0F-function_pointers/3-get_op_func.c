@@ -19,9 +19,6 @@ int (*get_op_func(char *s))(int, int)
 		int i;
 
 		i = 0;
-		if (s[0] == '\\')
-			s[0] = '0';
-
 		while (i < 5)
 		{
 			if (ops[i].op[0] == s[0])
@@ -31,7 +28,5 @@ int (*get_op_func(char *s))(int, int)
 			i++;
 		}
 
-	printf("Error\n");
-	exit(99);
 	return (NULL);
 }
