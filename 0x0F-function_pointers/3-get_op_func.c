@@ -19,6 +19,8 @@ int (*get_op_func(char *s))(int, int)
 		int i;
 
 		i = 0;
+		if (s[0] == '\\')
+			s[0] = '0';
 
 		while (i < 5)
 		{
