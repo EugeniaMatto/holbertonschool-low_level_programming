@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)");
 		}
 
-		if ((x != n - 1) && (separador != NULL))
+		if ((x != n - 1) && (separator != NULL))
 			printf("%s", separator);
 	}
 	va_end(lista);
