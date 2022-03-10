@@ -12,9 +12,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list lista;
 	char *arr = "";
 
-	if (n == 0 || separator == NULL)
-		return;
-
 	va_start(lista, n);
 	for (x = 0; x < n; x++)
 	{
@@ -28,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)");
 		}
 
-		if (x != n - 1)
+		if ((x != n - 1) && (separador != NULL))
 			printf("%s", separator);
 	}
 	va_end(lista);
