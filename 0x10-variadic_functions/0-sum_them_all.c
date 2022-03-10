@@ -20,6 +20,6 @@ int sum_them_all(const unsigned int n, ...)
 	for (x = 0; x < n; x++)
 		i += va_arg(lista, int);
 
-	va_end (lista);
+	va_end(lista);
 	return (i);
 }
