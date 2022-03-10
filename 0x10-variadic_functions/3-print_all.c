@@ -10,6 +10,7 @@ void print_all(const char * const format, ...)
 {
 	int b, i;
 	va_list lista;
+	char *juan = "";
 
 	op_t ops[] = {
 		{"c", print_char},
@@ -28,9 +29,9 @@ void print_all(const char * const format, ...)
 		{
 			if (ops[b].op[0] == format[i])
 			{
+				printf("%s", juan);
 				ops[b].f(lista);
-				if (format[i + 1] != '\0')
-					printf(", ");
+				juan = ", ";
 			}
 			b++;
 		}
