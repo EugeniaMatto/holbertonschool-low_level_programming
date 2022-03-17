@@ -20,8 +20,10 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	new->str = _strdup(aux);
-	while (str)
+
+	while (str[i])
 		i++;
+
 	new->len = i;
 	new->next = *head;
 	*head = new;
