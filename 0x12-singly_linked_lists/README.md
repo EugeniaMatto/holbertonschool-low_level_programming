@@ -2,7 +2,7 @@
 
 For this project, students are expected to look at this concept:
 
-	[x] Data Structures
+	Data Structures
 
 ## 0. Print list
 	**size_t print_list(const list_t *h);**
@@ -25,7 +25,7 @@ For this project, students are expected to look at this concept:
 	Write a function that frees a list_t list.
 
 	
- [] advanced task:
 ## 5. The Hare and the Tortoise
+	advanced task:
 	Write a function that prints You're beat! and yet, you must allow,
 	\nI bore my house upon my back!\n before the main function is executed.
