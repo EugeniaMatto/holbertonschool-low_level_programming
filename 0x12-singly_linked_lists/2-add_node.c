@@ -16,7 +16,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new == NULL)
 		return (NULL);
 
-	new->str = _strdup((char *) str);
+	new->str = _strdup((char *)str);
 
 	while (str[i] != '\0')
 		i++;
@@ -28,14 +28,17 @@ list_t *add_node(list_t **head, const char *str)
 	return (new);
 }
 /**
- * _strdup - crea un array
- * @str: tamaño del array
- * Return: cadena
+ * _strdup - copia un array
+ * @str: array
+ * Return: array copiado
  */
 char *_strdup(char *str)
 {
 	char *p;
 	int b, i;
+
+	if (str == NULL)
+		return NULL;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -43,8 +46,8 @@ char *_strdup(char *str)
 
 	p = malloc(sizeof(char) * i);
 
-	if (p == NULL || str[0] == '\0')
-		return ('\0');
+	if (p == NULL)
+		return (NULL);
 
 	for (b = 0; b < i; b++)
 		p[b] = str[b];
