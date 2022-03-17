@@ -38,7 +38,7 @@ char *_strdup(char *str)
 	int b, i;
 
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	i = 0;
 	while (str[i] != '\0')
