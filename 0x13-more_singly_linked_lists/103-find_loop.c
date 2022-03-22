@@ -7,8 +7,12 @@ listint_t *find_listint_loop(listint_t *head);
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *aux = head, *aux2 = head;
+	listint_t *aux, *aux2;
 
+	if (head == NULL)
+		return (NULL);
+
+	aux = head;
 	while (aux != NULL)
 	{
 		if (aux->next == (head))
