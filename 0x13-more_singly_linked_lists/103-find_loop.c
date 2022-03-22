@@ -15,7 +15,7 @@ listint_t *find_listint_loop(listint_t *head)
 	aux = head;
 	while (aux != NULL)
 	{
-		if (aux->next == (head))
+		if (aux->next == (head) || aux == aux->next)
 			return (aux);
 
 		aux2 = head;
