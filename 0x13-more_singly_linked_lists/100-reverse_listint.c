@@ -14,6 +14,17 @@ listint_t *reverse_listint(listint_t **head)
 	if ((*head)->next == NULL)
 		return (*head);
 
+	if ((*head)->next->next->next == NULL) /* 3 elementos */
+	{
+		aux = (*head)->next->next; /* ultimo elem */
+		aux2 = (*head)->next;
+		aux->next = aux2;
+		aux2->next = *head;
+		(*head)->next = NULL;
+		*head = aux;
+		return (*head);
+	}
+
 	*head = (*head)->next;
 	aux2->next = NULL;
 
