@@ -7,7 +7,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (((n >> index) & 1) == 0 || ((n >> index) & 1) == 1)
-		return ((n >> index) & 1);
+	/* cant. chars maximo q tiene el max unsg long en binario son 64 */
+	if (index < 64)
+	{
+		if (((n >> index) & 1) == 0 || ((n >> index) & 1) == 1)
+			return ((n >> index) & 1);
+	}
 	return (-1);
 }
