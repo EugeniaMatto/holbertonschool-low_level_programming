@@ -17,7 +17,7 @@
 - **`C`** - Singly linked lists.
 
 ## End of trimester proyects:
-- **`Printf`** - create your own **`Printf`**.
+- **`Printf`** - create your own **`Printf`** function.
 - **`Shell`** - create your own **`Shell`**.
 
 **by [María Eugenia Matto](https://www.linkedin.com/in/maria-matto/) - 2022 - Montevideo, Uruguay.**
