@@ -2,7 +2,7 @@
 
 **This repository has the contents given in the first trimester as a Holberton School Student.**
 
-**by Eugenia Matto -2022 - Montevideo, Uruguay.**
+**by Eugenia Matto - 2022 - Montevideo, Uruguay.**
 
 ## Subjects of study:
 - **Git** and command line editors.
