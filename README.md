@@ -2,8 +2,6 @@
 
 **This repository has the contents given in the first trimester as a Holberton School Student.**
 
-**by Eugenia Matto - 2022 - Montevideo, Uruguay.**
-
 ## Subjects of study:
 - **Git** and command line editors.
 - Introduction to **Bash**.
@@ -21,3 +19,5 @@
 ## End of trimester proyects:
 - **Printf** - create your own **Printf**.
 - **Shell** - create your own **Shell**.
+
+**by [María Eugenia Matto](https://www.linkedin.com/in/maria-matto/) - 2022 - Montevideo, Uruguay.**
