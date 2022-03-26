@@ -1,6 +1,6 @@
 # Holberton low level programming
 
-**This repository has the contents given in the first trimester as a Holberton School Student. 2022**
+**This repository has the contents given in the first trimester as a Holberton School Student 2022.**
 
 ## Subjects of study:
 - **`Git`** and command line editors.
