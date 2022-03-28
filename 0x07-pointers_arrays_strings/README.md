@@ -40,7 +40,5 @@ Write a function that prints the chessboard.
 Write a function that prints the sum of the two diagonals of a square matrix of integers.
 
 
-*Advanced task*
-
-9. `void set_string(char **s, char *to);`
+9. *Advanced task:* `void set_string(char **s, char *to);`
 Write a function that sets the value of a pointer to a char.
