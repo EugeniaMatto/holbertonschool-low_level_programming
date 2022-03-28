@@ -17,10 +17,8 @@ int main(int argc, char **argv)
 		write(STDERR_FILENO, "Usage: cp file_from file_to\n", 28);
 		exit(97);
 	}
-
 	file_from = argv[1];
 	file_to = argv[2];
-
 	fd_to = open(file_to, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR
 			| S_IRGRP | S_IWGRP | S_IROTH);
 	if (fd_to == -1)
@@ -28,12 +26,15 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
-
 	buffer = malloc(1024 * sizeof(char));
 	if (!buffer)
 		return (-1);
 	fd_from = open(file_from, O_RDONLY);
-
+	if (fd_from == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+		exit(98);
+	}
 	rd = 1024;
 	for (; rd == 1024; ) /* mientras rd sea igual a 1024 */
 	{
