@@ -9,7 +9,7 @@
  *Functions:*
 
 0. `char *_memset(char *s, char b, unsigned int n);`
-Write a function that fills memory with a constant byte.
+  Write a function that fills memory with a constant byte.
 
 
 1. `char *_memcpy(char *dest, char *src, unsigned int n);`
