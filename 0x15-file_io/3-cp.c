@@ -19,8 +19,8 @@ int main(int argc, char **argv)
 	}
 	file_from = argv[1];
 	file_to = argv[2];
-	fd_to = open(file_to, O_CREAT | O_RDWR | O_TRUNC, S_IRUSR | S_IWUSR
-			| S_IRGRP | S_IWGRP | S_IROTH);
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR
+		| S_IRGRP | S_IWGRP | S_IROTH);
 	if (fd_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
@@ -32,6 +32,7 @@ int main(int argc, char **argv)
 	fd_from = open(file_from, O_RDONLY);
 	if (fd_from == -1)
 	{
+		close100(fd_to);
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
@@ -39,7 +40,7 @@ int main(int argc, char **argv)
 	for (; rd == 1024; ) /* mientras rd sea igual a 1024 */
 	{
 		rd = read(fd_from, buffer, 1024);
-		if ((rd == -1) || (fd_from == -1))
+		if (rd == -1)
 		{
 			close100(fd_to);
 			close100(fd_from);
