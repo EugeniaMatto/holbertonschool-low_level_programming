@@ -16,7 +16,6 @@ int main(int argc, char **argv)
 		write(STDOUT_FILENO, "Usage: cp file_from file_to\n", 28);
 		exit(97);
 	}
-
 	file_from = argv[1];
 	file_to = argv[2];
 
