@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-void error97(void);
 void close100(int file);
 /**
  * main -Write a program that copies the content of a file to another file.
@@ -14,7 +13,11 @@ int main(int argc, char **argv)
 	int fd_from, fd_to, rd;
 
 	if (argc != 3)
-		error97();
+	{
+		write(STDERR_FILENO, "Usage: cp file_from file_to\n", 28);
+		exit(97);
+	}
+
 	file_from = argv[1];
 	file_to = argv[2];
 
@@ -45,17 +48,9 @@ int main(int argc, char **argv)
 		write(fd_to, buffer, rd);
 	}
 	close100(fd_from);
+	close100(fd_to);
 	return (0);
 }
-/**
- * error97 -  error97
- */
-void error97(void)
-{
-	write(STDERR_FILENO, "Usage: cp file_from file_to\n", 28);
-	exit(97);
-}
-
 /**
  * close100 - error al cerrar file
  * @file: file a cerrar
@@ -66,7 +61,7 @@ void close100(int file)
 
 	if (a == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file);
 		exit(100);
 	}
 }
