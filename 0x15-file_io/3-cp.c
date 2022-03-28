@@ -45,7 +45,11 @@ int main(int argc, char **argv)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 			exit(98);
 		}
-		write(fd_to, buffer, rd);
+		if (write(fd_to, buffer, rd) == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+			exit(99);
+		}
 	}
 	close100(fd_from);
 	close100(fd_to);
