@@ -67,6 +67,6 @@ void close100(int file)
 	if (a == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file);
-		exit (100);
+		exit(100);
 	}
 }
