@@ -39,6 +39,6 @@ Write a function that prints the chessboard.
 8. `void print_diagsums(int *a, int size);`  
 Write a function that prints the sum of the two diagonals of a square matrix of integers.
 
-
-9. *Advanced task:* `void set_string(char **s, char *to);`  
+*Advanced task:*   
+9.`void set_string(char **s, char *to);`  
 Write a function that sets the value of a pointer to a char.
