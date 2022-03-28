@@ -1,9 +1,12 @@
 # 0x07. C - Even more pointers, arrays and strings
 
-## General
+## *General*
 - What are `pointers to pointers` and how to use them
 - What are `multidimensional arrays` and how to use them
 - What are the most common C standard library functions to manipulate strings
+
+#
+## *Funcions:*
 
 0. `char *_memset(char *s, char b, unsigned int n);`
 Write a function that fills memory with a constant byte.
