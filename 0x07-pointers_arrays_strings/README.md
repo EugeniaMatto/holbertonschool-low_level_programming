@@ -6,7 +6,7 @@
 - What are the most common C standard library functions to manipulate strings
 
 #
-## *Funcions:*
+ *Funcions:*
 
 0. `char *_memset(char *s, char b, unsigned int n);`
 Write a function that fills memory with a constant byte.
