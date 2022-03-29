@@ -17,7 +17,7 @@ Write a function that prints a string in reverse.
 ### 2. `int _strlen_recursion(char *s);`
 Write a function that returns the length of a string.
 
-## 3.`int factorial(int n);`
+### 3.`int factorial(int n);`
 Write a function that returns the factorial of a given number.
 
 ### 4. `int _pow_recursion(int x, int y);`
@@ -29,7 +29,7 @@ Write a function that returns the natural square root of a number.
 ### 6. `int is_prime_number(int n);`
 Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
 
-#### Advanced tasks:
+## Advanced tasks:
 
 ### 7. `int is_palindrome(char *s);`
 Write a function that returns 1 if a string is a palindrome and 0 if not.
