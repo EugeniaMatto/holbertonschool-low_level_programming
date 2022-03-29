@@ -29,6 +29,7 @@ Write a function that returns the natural square root of a number.
 ### 6. `int is_prime_number(int n);`
 Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
 
+####
   
 #### Advanced tasks:
 
