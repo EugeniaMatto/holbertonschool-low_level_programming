@@ -17,7 +17,7 @@
 - **`C`** - Bit manipulation.
 - **`C`** - File I/O.
 - **`C`** - Singly linked lists.
-- 
+
 ####
 
 ## End of trimester proyects:
