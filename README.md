@@ -2,6 +2,8 @@
 
 **This repository has the contents given in the first trimester as a Holberton School Student, 2022.**
 
+####
+
 ## Subjects of study:
 - **`Git`** and command line editors.
 - Introduction to **`Bash`**.
@@ -15,6 +17,8 @@
 - **`C`** - Bit manipulation.
 - **`C`** - File I/O.
 - **`C`** - Singly linked lists.
+- 
+####
 
 ## End of trimester proyects:
 - **`Printf`** - create your own **`Printf`** function.
