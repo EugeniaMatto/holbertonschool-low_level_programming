@@ -3,6 +3,8 @@
 ## General
 - What are structures, when, why and how to use them
 - How to use typedef
+ 
+##
 
 ### 0. Define a new type struct dog with the following elements:
 - name, type = char *
