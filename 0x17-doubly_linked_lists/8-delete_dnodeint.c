@@ -12,12 +12,14 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *aux, *sig;
 	unsigned int i = 0;
 
-	if (!head || !(*head))
+	if (!head || !(*head) || (index != 0 && !(*head)->next))
 		return (-1);
 	aux = *head;
 	if (index == 0)
 	{
 		sig = aux->next;
+		if (sig)
+			sig->prev = NULL;
 		*head = sig;
 		free(aux);
 		return (1);
