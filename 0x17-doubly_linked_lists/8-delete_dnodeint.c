@@ -29,12 +29,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		aux = aux->next;
 		i++;
 	}
-	if (!aux)
+	if (!aux || !aux->next)
 		return (-1);
 
 	sig = aux->next->next;
 	free(aux->next);
 	aux->next = sig;
-	sig->prev = aux;
+	if (sig)
+		sig->prev = aux;
 	return (1);
 }
