@@ -9,11 +9,11 @@ void main (void)
 	{
 		res1 = i / 1000;
 		n = i;
-		res2 = (n % 10);
+		res2 = (n % 10) * 100;
 		n = i / 10;
 		res2 += (n % 10) * 10;
 		n = n / 10;
-		res2 += (n % 10) * 100;
+		res2 += (n % 10);
 
 		if (res1 == res2)
 		{
