@@ -13,7 +13,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	unsigned int i = 0;
 
 	if (!head || !(*head))
-		return (1);
+		return (-1);
 	aux = *head;
 	if (index == 0)
 	{
@@ -28,7 +28,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		i++;
 	}
 	if (!aux)
-		return (-1);
+		return (1);
 
 	sig = aux->next->next;
 	free(aux->next);
