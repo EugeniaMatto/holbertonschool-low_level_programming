@@ -5,7 +5,7 @@
  * delete_dnodeint_at_index - delete a node at the index
  * @head: head
  * @index: index
- * Return: new node adress
+ * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -13,7 +13,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	unsigned int i = 0;
 
 	if (!head || !(*head))
-		return (-1);
+		return (1);
 	aux = *head;
 	if (index == 0)
 	{
