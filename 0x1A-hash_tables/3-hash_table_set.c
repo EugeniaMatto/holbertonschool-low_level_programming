@@ -29,16 +29,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		a = a->next;
 	}
-	if (ht->array[idx])
-		a = new_node(ht->array[idx]);
 	b = malloc(sizeof(hash_node_t));
 	if (!b)
 		return (0);
 	b->key = strdup(key);
 	b->value = strdup(value);
-	b->next = NULL;
-	if (a)
-		b->next = a;
+	b->next = ht->array[idx];
 	ht->array[idx] = b;
 
 	return (1);
@@ -46,7 +42,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 /**
  *  new_node - adds new node
- *  @old - data
+ *  @old: data
  *  Return: new node
  */
 hash_node_t *new_node(hash_node_t *old)
