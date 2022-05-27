@@ -12,14 +12,24 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (; ht && i < ht->size; i++)
 	{
-		aux = ht->array[i];
-		while (aux)
+		if (ht->array[i])
 		{
 			if (z == 1)
-				printf(",");
+				printf(", ");
 			z = 1;
-			printf("'%s': '%s'", aux->key, aux->value);
-			aux = aux->next;
+			printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
+		}
+	}
+	for (; ht && i < ht->size; i++)
+	{
+		if (ht->array[i])
+		{
+			aux = ht->array[i]->next;
+			while (aux)
+			{
+				printf(", '%s': '%s'", aux->key, aux->value);
+				aux = aux->next;
+			}
 		}
 	}
 	printf("}\n");
