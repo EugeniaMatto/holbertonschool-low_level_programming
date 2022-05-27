@@ -18,7 +18,7 @@ void hash_table_print(const hash_table_t *ht)
 			if (z == 1)
 				printf(", ");
 			z = 1;
-			printf("'%s': '%s'");
+			printf("'%s': '%s'", aux->key, aux->value);
 			aux = aux->next;
 		}
 	}
