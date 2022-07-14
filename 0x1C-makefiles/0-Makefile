@@ -1,0 +1,8 @@
+# flags:
+F = -Wall -pedantic -Werror -Wextra -std=gnu89
+
+# rules:
+all: school
+
+school: main.c school.c
+	gcc $(F) main.c school.c -o school
