@@ -5,4 +5,4 @@ F = -Wall -pedantic -Werror -Wextra -std=gnu89
 all: school
 
 school: main.c school.c
-	gcc $(F) main.c school.c -o school
+	gcc main.c school.c -o school
