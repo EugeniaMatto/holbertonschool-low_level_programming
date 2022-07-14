@@ -1,0 +1,7 @@
+# variables
+CC = gcc
+SRC = main.c school.c
+
+# rules
+all:
+	$(CC) $(SRC) -o school
