@@ -5,8 +5,5 @@ OBJ = main.o school.o
 NAME = school
 
 # rules
-all: main.c
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
-main.o:
-	$(CC) -c -o $(OBJ) $(SRC)
