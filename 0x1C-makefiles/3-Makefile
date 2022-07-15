@@ -7,7 +7,7 @@ RM=rm -f
 
 # rules
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(SRC) -o $(NAME)
 
 clean:
 	$(RM) *.~ $(NAME)
