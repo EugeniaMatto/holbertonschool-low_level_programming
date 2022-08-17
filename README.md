@@ -2,7 +2,7 @@
 
 **This repository has the contents given in the first trimester as a Holberton School Student, 2022.**
 
-####
+![Holberton](https://apply.holbertonschool.com/holberton-logo.png)
 
 ## Subjects of study:
 - **`Git`** and command line editors.
